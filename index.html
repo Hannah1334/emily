@@ -1,162 +1,444 @@
 <style>
 body{
-background-image: url('https://i.imgur.com/XirydbH.png') !important; 
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
 background-repeat:no-repeat !important; 
-background-position:right !important; 
-background-size:contain;
-background-color:#F0C8AF;
+background-position:center !important; 
+background-size:cover !important;
+background-color:#FD447E;
 }
 
-::-webkit-scrollbar {background-color: none; height:5px; width:5px; border:none}
-::-webkit-scrollbar-thumb:vertical {background-color:#9DB9CD; height:50px}
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #F49C98;}
 
 #box1 {
 position:absolute;
-top:0%;
-left:20%;
-height:100%;
-width:16%;
-background-color:#17102F;
+background-color:#FD447E;
+border:2px dotted #F49C98;
+width:25%;
+height:40%;
+top:35%;
+left:36.5%;
 }
 
 #box2 {
 position:absolute;
-top:0%;
-left:48%;
-height:100%;
-width:2%;
-background-color:#CFEBFF;
+background-color:#FD447E;
+border:2px dotted #F49C98;
+width:10%;
+height:53%;
+top:22%;
+left:71.5%;
 }
 
 #box3 {
 position:absolute;
-top:4%;
-left:20.8%;
-width:14%;
-height:28%;
-background-color:#E3DBC8;
-border:2px solid #CFEBFF;
+background-color:#FD447E;
+border:2px dotted #F49C98;
+width:20%;
+height:53%;
+top:22%;
+left:15%;
 }
 
-#box4 {
+#title {
 position:absolute;
-padding:10px;
+padding:2%;
+background-color:#FF6CA2;
+border-left:10px solid #F49C98;
+border-top:1px solid #F49C98;
+border-bottom:1px solid #F49C98;
+border-right:1px solid #F49C98;
+width:85%;
+height:5%;
+top:5%;
+left:4%;
+color:#ffffff;
+font-family:Sevillana;
+font-size:17px;
+}
+
+#content {
+position:absolute;
+padding:2%;
 overflow:auto;
-top:34.5%;
-left:15.5%;
-width:23%;
-height:30%;
-background-color:#E3DBC8;
-border:2px solid #17102F;
-color:#17102F;
-font-size:80%;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:87.3%;
+height:71%;
+top:18%;
+left:4%;
 font-family:Arial;
+color:#ffffff;
+font-size:10px;
 }
 
-#box5 {
+#picbox {
 position:absolute;
-top:69%;
-left:21%;
-width:14%;
-height:28%;
-background-color:#E3DBC8;
-border:2px solid #CFEBFF;
+padding:2%;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:85%;
+height:88%;
+top:4%;
+left:5%;
 }
 
-.tabs{
-width:100%;
-height:12%;
-margin-top:2.5%;
-margin-bottom:2%;
-color:#CFEBFF;
-background-color:#17102F;
+#idbox {
+position:absolute;
+padding:2%;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:75.5%;
+height:30%;
+top:4%;
+left:10%;
+background-image: url('https://i.imgur.com/TiHjr67.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#basicbox {
+position:absolute;
+padding:2%;
+overflow:auto;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:75.5%;
+height:54%;
+top:40%;
+left:10%;
+font-family:Arial;
+color:#ffffff;
+font-size:12px;
 text-align:center;
-font-size:120%;
-font-family: 'Supermercado One', cursive;
-display: inline-block;
+}
+
+#banner {
+position:absolute;
+width:12%;
+height:10%;
+top:35.5%;
+left:70.8%;
+}
+
+#pictab1 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+height:10%;
+width:5%;
+top:22%;
+left:36.5%;
+background-image: url('https://i.imgur.com/zOr6V07.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#pictab2 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+height:10%;
+width:5%;
+top:22%;
+left:43.3%;
+background-image: url('https://i.imgur.com/ddBRhb7.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#pictab3 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+height:10%;
+width:5%;
+top:22%;
+left:49.9%;
+background-image: url('https://i.imgur.com/MB3s8Vx.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#pictab4 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+height:10%;
+width:5%;
+top:22%;
+left:56.5%;
+background-image: url('https://i.imgur.com/euMJOwh.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:22%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:30%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:38%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:46%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox5 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:54%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox6 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:62%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+#tabbox7 {
+position:absolute;
+background-color:#FD447E;
+border:2px solid #F49C98;
+width:7%;
+height:5%;
+top:70%;
+left:63%;
+background-image: url('https://i.imgur.com/C33iSLt.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover !important;
+}
+
+.tabs1 {
+display:block;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:75%;
+height:75%;
+margin-left:11.5%;
+margin-top:10%;
+opacity:0;
+font-family:Sue Ellen Francisco;
+color:#ffffff;
+text-align:center;
+text-transform:uppercase;
+line-height:400%;
+font-size:15px;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-.tabs:hover {
-color:#17102F;
-background-color:none;
+.tabs1:hover {
+opacity:1;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tab1, #tab2, #tab3, #tab4, #tab5, #tab6, #tab7, #tab8, #tab9, #tab10, #tab11, #tab12 {
-display:none;
+.tabs2 {
+display:block;
+background-color:#FF6CA2;
+border:1px solid #F49C98;
+width:82%;
+height:59%;
+margin-left:8%;
+margin-top:6%;
+font-family:Sue Ellen Francisco;
+color:#ffffff;
+text-align:center;
+text-transform:uppercase;
+font-size:12px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs2:hover {
+background-color:#FD447E;
+border:1px solid #F49C98;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22,#tab23,#tab24,#tab25,#tab26,#tab27 {
+display: none;
+}
+
+i {
+color:#cccccc;
+}
+
+a {
+color:#FD447E;
 }
 
 h1 {
-background: #17102F;
-letter-spacing: 4px;
-color: #CFEBFF;
-font-family: 'Supermercado One', cursive;
-text-align:center;
-font-size: 120%;
+text-align:right;
+color: #cccccc;
+letter-spacing:5px;
+font-family:Sevillana;
+border-bottom:1px dotted #F49C98;
+font-size: 13px;
 }
 
-b, strong {
-color:#876B56;
-font-family:Arial;
-text-transform:uppercase;
-letter-spacing: 3px;
+b {
+font-family:Sevillana;
+color:#cccccc;
+font-size: 13px;
 }
-
-li {
-color: #888888;
-}
-
-i, em {
-color: #888888;
-}
-
 </style>
 
-<link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur818.cur), progress !important;}</style>
-<script>function changeNavigation(id) {document.getElementById('box4').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('box5').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Sevillana|Sue+Ellen+Francisco" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('title').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('picbox').innerHTML=document.getElementById(id).innerHTML}</script>
 
 <div id="box1">
-<div id="box2">
+<div id="title">
+The Rose Sorceress
 </div>
+<div id="content">
+This character was created to fit the eat-and-grow meta of <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a> and will slowly progress in development as well as magical power over time. Sadly I do not participate in one on one roleplays anymore, but if you are still interested in the chance to interact with her and are willing to try the format <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a> provides, please feel free to click the link (dark pink text) and check it out for yourself!
+<br><br>
+The profile template you see displayed here was coded by me with love. Would you like to have a snazzy full too? Drop me a Private Message, either on here or on my main account <a target="_blank" href="http://fae.chatango.com">"Fae"</a>. I only charge very small fees for my handiwork. Already got an idea of what you want it to look like, but don't know how to carry it out in code? Don't sweat it! Just let me know what you want and I'll put it together.
+<br><br>
+Thanks for taking the time to look at my sheet, hope to see you soon. ♥
+</div>
+</div>
+
+<div id="pictab1">
+<span class="tabs1" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3')">Details</span>
+</div>
+<div id="pictab2">
+<span class="tabs1" onClick="changeNavigation ('tab4');changeNavigation1 ('tab5');changeNavigation2 ('tab6')">Lore</span>
+</div>
+<div id="pictab3">
+<span class="tabs1" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8');changeNavigation2 ('tab9')">History</span>
+</div>
+<div id="pictab4">
+<span class="tabs1" onClick="changeNavigation ('tab10');changeNavigation1 ('tab11');changeNavigation2 ('tab12')">Culture</span>
+</div>
+
+<div id="tabbox1">
+<span class="tabs2" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14');changeNavigation2 ('tab15')">Inventory</span>
+</div>
+<div id="tabbox2">
+<span class="tabs2" onClick="changeNavigation ('tab16');changeNavigation1 ('tab17')">Universals</span>
+</div>
+<div id="tabbox3">
+<span class="tabs2" onClick="changeNavigation ('tab18');changeNavigation1 ('tab19')">Manatism</span>
+</div>
+<div id="tabbox4">
+<span class="tabs2" onClick="changeNavigation ('tab20');changeNavigation1 ('tab21')">Paganism</span>
+</div>
+<div id="tabbox5">
+<span class="tabs2" onClick="changeNavigation ('tab22');changeNavigation1 ('tab23')">Bardism</span>
+</div>
+<div id="tabbox6">
+<span class="tabs2" onClick="changeNavigation ('tab24');changeNavigation1 ('tab25')">Kinetics</span>
+</div>
+<div id="tabbox7">
+<span class="tabs2" onClick="changeNavigation ('tab26');changeNavigation1 ('tab27')">Combinations</span>
+</div>
+
+<div id="box2">
+<div id="idbox">
+</div>
+<div id="basicbox">
+<br>
+<b>Name:</b><br>Emily Rose<br>
+<b>Age:</b><br>Seven<br>
+<b>Birthdate:</b><br>June 19th<br>
+<b>Gender:</b><br>Female<br>
+<b>Species:</b><br>Human<br>
+<b>Race:</b><br>British<br>
+</div>
+</div>
+<div id="banner">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/2kGlHt2.png"/>
 </div>
 
 <div id="box3">
-<div onclick="changeNavigation('tab1');changeNavigation1('tab7')" class="tabs">Details</div>
-<div onclick="changeNavigation('tab2');changeNavigation1('tab8')" class="tabs">History</div>
-<div onclick="changeNavigation('tab3');changeNavigation1('tab9')" class="tabs">Culture</div>
-<div onclick="changeNavigation('tab4');changeNavigation1('tab10')" class="tabs">Inventory</div>
-<div onclick="changeNavigation('tab5');changeNavigation1('tab11')" class="tabs">???</div>
-<div onclick="changeNavigation('tab6');changeNavigation1('tab12')" class="tabs">???</div>
+<div id="picbox">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/znFEd4o.png"/>
 </div>
-
-<div id="box4">
-<h1>Basic Information</h1>
-<b>Name:</b> Emily Rose<br>
-<b>Nickname:</b> Em, Emmy<br>
-<b>Age:</b> Seven<br>
-<b>Birthdate:</b> June 19th<br>
-<b>Gender:</b> Female<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> British<br>
-<b>Tree(s):</b> ???<br>
-<b>Occupation:</b> ???<br>
-<b>Rank:</b> ???<br>
-<b>Height:</b>3'4"<br>
-<b>Weight:</b>35 lbs.
-</div>
-
-<div id="box5">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/gc2u3yh.png"/>
 </div>
 
 <div id="tab1">
+<b>Height:</b><br>3'4"<br>
+<b>Weight:</b><br>35 lbs.<br><br>
 <h1>Appearance</h1>
 <b>Hair</b><br>
 Long, thick, and naturally fairly straight. Despite being as soft a pink as rose petals in nature, it is as natural and healthy looking as it can be, suggesting a high tier bloodline.
@@ -176,23 +458,40 @@ Thin and seemingly healthy for a girl her age when dressed up in clothing, but i
 <h1>Personality</h1>
 Emily is very timid and easily frightened. It's not so much that she's actually shy, more that she lives in a state of worry and stress thanks to her heritage and her family's lifestyle. Whether it is the wrath of the stranger or the disappointment of her mother doesn't matter, each will be treated with equal prejudice, causing the girl to distance herself from what she perceives as a possible threat and making gentle approaches and conversations all the more difficult. She is more comfortable with the approach of strangers if someone she feels she can trust is with her.
 </div>
-
 <div id="tab2">
-<h1>History of the Rose Family</h1>
+Detailed Information
+</div>
+<div id="tab3">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/qKkPOYZ.png"/>
+</div>
+
+<div id="tab4">
 As common as most fairy-tales, the Rose family began with a pair of star-crossed-lovers. Society scoffed in disgust for various reasons, the most prominent being the prejudice mentality at the time against humans and magical creatures being anything less than hateful enemies. Being a newer clan of talented human mages among a large number of already old families, the lovers' descendants faced many trials and various hardships, but legend says it was their strong bond which gave them the ability to survive through it.
 <br><br>
 To this day, the Roses are seen as a highly influential British family, even regarded as high ranking New World politicians thanks to their involvement with many of man's trials and hardships. As the present became history, time erased the reality of magic and harnass-able energy from the minds of humans--or at least, the ones who didn't continue to practice it religiously behind closed doors. The strange pink haired family of wealth became increasingly secretive as the years passed, and now the only access the outside world has to their lives are small tidbits of information they allow to be leaked to the press. It is not uncommon to see a Rose attend things like charity events and various other "good will" spreading efforts. They are seen as a kindhearted people who will pay any cost to take care of their fellow man...
 <br><br>
 ...Or at least, that is what they have led everyone to believe.
-<br><br>
-<h1>The Birth and Early Life of Emily</h1> 
+</div>
+<div id="tab5">
+History of the Rose Family
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/ygukUvW.png"/>
+</div>
+
+<div id="tab7">
 Beatrice Rose was a beautiful young lady, full of so much potential, born with a silver spoon in her mouth. Her family treated her like a princess, believing for so long that she was some kind of gift from the gods that their mindset influenced such high snobby behavior from her they began to regret their decisions, and she was forced to resort to manipulating her surroundings in order to keep being as severely pampered. Naturally things that were out of her control, like the very pregnancy that began Emily's journey into existence, angered her. Not allowed to simply give up the baby by her family, she treated it with utter distaste and neglect, a constant reminder of her shattered dreams and unwanted intimate relations. The attitude of her family followed suit.
 <br><br>
 Emily grew up in a confusing mix of treatment that varied from mercy thanks to being "the family savior's child," all the way to violent audible and sometimes physical scoldings triggered by the smallest of things that were beyond the girl's control. When it was decided that her mother would attend an off-world establishment she was excited for the change of pace, but frightened by the unknown that awaited them. It was required of her mother to bring her along, much to her dismay of course, but Emily went willingly and rejoiced in her newfound freedom.
 </div>
+<div id="tab8">
+The Birth & Early Life of Emily
+</div>
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/teiOtZK.jpg"/>
+</div>
 
-<div id="tab3">
-<h1>The Family System</h1>
+<div id="tab10">
 <b>Branches</b><br>
 There are four prominent different groups within the Rose family, sharing the same last name but bearing different important skills and faction titles. Can you guess which one Emily belongs to?
 <li>The Warriors:</li> The line that extends from the firstborn child of the two original lovers. They're considered the most prominent and powerful of the branches, and are inherently strong, allowing them to control the other factions through intimidation. Often hard headed with vile tempers, their skills stem from their physical and magical strength. The Warriors most commonly practice violently destructive magics.
@@ -216,44 +515,94 @@ While primarily connected to--and centralized in--the United Kingdom, the Roses 
 <b>"Romance"</b><br>
 All marriages are arranged, and courtships must be signed off on by the parents of the future couples. In addition to this, the Roses have a strict system of inbreeding, they are not allowed to "dirty the bloodline" by creating children with lesser beings outside of their own clan, even if they are allies. Romance is a forced concept, siblings, cousins, and other various relatives are often forced into relationships for the sake of breeding and sometimes even political gain, and if they do not appear happy they are assumed to be ungrateful and are swiftly put to death. If any bastard or secret children with outsiders are discovered, the offender is required to end the lives of their own children by sacrificial rite. Most of the time this ends with the parents being framed for murdering their own offspring, stirring the public into an uproar and cruelly ruining their lives before they are put to death by an external government.
 </div>
+<div id="tab11">
+The Family System
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/0Cuvl2O.png"/>
+</div>
 
-<div id="tab4">
-<h1>Items</h1>
+<div id="tab13">
 <b>Small Backpack</b><br>
 Filled with a couple of toys and coloring utensils, the backpack is everything Emily owns that counts as harmless child entertainment.
 <br><br>
 <b>Small Suitcase</b><br>
 Packed tight with essentials such as clothing, hair care products and other various toiletries, etc. The wheeled case isn't intended to be used much for anything other than carting around her belongings.
 </div>
-
-<div id="tab5">
-<h1>???</h1>
+<div id="tab14">
+Tools & Trinkets
+</div>
+<div id="tab15">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/SzxWWMm.png"/>
 </div>
 
-<div id="tab6">
-<h1>???</h1>
+<div id="tab16">
+<p align="center"><i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i></p>
+<br>
+<b>Aura</b><br>
+Every living thing has mana, and the colors of their mana and their aura vary from person to person. Emily's manifests most commonly in varying shades of pink, but can also take on green and purple hues.
+<br>
+<i>"Pink is a delicate color that means sweet, nice, playful, cute, romantic, charming, feminine, and tenderness. It is associated with bubble gum, flowers, babies, little girls, cotton candy, and sweetness. The color pink is the color of universal love of oneself and of others."</i>
+<br><br>
+<b>Mana Weave</b><br>
+To weave ones mana is the very essence of being a mage; almost every spell that you will learn from this tome, as well as spells you develop of your own volition will incorporate this technique in some way, shape, or form. Weaving mana is an extremely simple task to those who are born with an active mana pool; simply focus on a singular part of the body -- typically the hands --  and envision a manifestation of your inner energies bubbling to it's surface.
+<br>
+​There are numerous books in the Grand Archives that take this process into more depth, and this overview is meant to act as a reference rather than a teacher, so if this is your first time attempting the magical arts, the best course of action for you would be to consult another mage for help, or at the very least another book for beginners within the library.
+<br>
+​This is a general spell, and has no single specific teacher. 
+<br><br>
+<b>Mana Spark</b><br>
+The next practical step for a mage who has learned to weave their mana is to learn to produce a mana spark. A mana spark is a relatively harmless projection of a mage's energies, creating a physical form and direction to one's mana without actually imbuing heavily violent intent upon it. It is the easiest way to learn the basics of creating projectiles via one's magic, and the physical techniques hind the theory are often reproduced to create a range of different attacks.
+<br>
+To create a mana spark, one must weave mana into a part of their body (or a medium) and quickly push the energies forward, out of the object it is weaving inside and into the physical world. This is generally done via a flick of the wrist when weaving through a hand, or a swish of a wand et cetera for a medium. Once the technique of forcing the energy out has been learned, it is only a matter of practice and muscle memory to become proficient with its directional accuracy and speed. Do not fear testing these out with partners, as being hit on the bare flesh with a mana spark feels much like a harsh pinch at best.
+<br>
+This is a general spell, and has no single specific teacher. 
+</div>
+<div id="tab17">
+Universal Spells (Mana Manipulation)
 </div>
 
-<div id="tab7">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/P7Pdc7q.png"/>
+<div id="tab18">
+<p align="center"><i>"The epitome of mana manipulation. Those that take this tree end up taking their skills in this art to levels so ridiculous they can solidify their mana into all shapes and sizes. Manatists start off with an advanced form of mana manipulation that makes them just a bit more adept at Paige rank with their skill than others. This of course doesn't stop being a fact as they rank up and as they learn spells, but lose their edge as their peers get more experienced. With their inate ability at mana manipulation, they are able to learn universal spells that are meant for those a rank above them and below.  Without a question of a doubt, their trump card comes in the form of an advanced form of mana, the purest a mage could possibly make. Arcane energy is a very volatile and destructive force, one that takes much time to master but is fully worth the journey from Expert Mage to the upper ranks available to mages. Some even say its power cannot be matched at its zenith."</i></p>
+<br>
+Work In Progress
+</div>
+<div id="tab19">
+Magus Manatism (Paige)
 </div>
 
-<div id="tab8">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/KEsonXi.png"/>
+<div id="tab20">
+<p align="center"><i>"The Pagans are mages who wield the destructive forces of nature. A Pagan may begin with simple abilities, such as talking to animals, making plants grow, or making small rain clouds. However, as these mages practice and hone their craft, powerful storms will accumulate at their command, and charging beasts will follow their every word. Such mages even possess the ability to cultivate and assault others with deadly diseases and viruses, and can create natural disasters after attaining highly skilled control with their magic."</i></p>
+<br>
+To be unlocked eventually!
+</div>
+<div id="tab21">
+Paganism (N/A)
 </div>
 
-<div id="tab9">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/JgIYE9g.png"/>
+<div id="tab22">
+<p align="center"><i>"Although music is a beautiful expression of art, the proper mage may cause it to become something much more. Bard's have the ability to convert music into powerful spells, focused primarily on buffing and (slight) healing. However, at higher levels Bardism can certainly do heavy damage, with a particular strength in sound based attacks."</i></p>
+<br>
+Won't be available for a long time, but will come eventually!
+</div>
+<div id="tab23">
+Bardism (N/A)
 </div>
 
-<div id="tab10">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/3n9Udlz.png"/>
+<div id="tab24">
+<p align="center"><i>"Forcient is a tree which focuses on the physical constants and laws of the universe, and how one may manipulate these constants and laws to suit their agenda. Forcient is divided into three different branches, each of which controls a small array of forces. A Kinetics mage focuses primarily on the forces of movement; the manipulation of kinetic and potential energy are their specialty. However, many mages may find they have gained access to the manipulation of pressure, and other forces outside of gravity and magnetism. A Kinetics mage's magic is very special- while it is magic, their spells often inflict physical damage."</i></p>
+<br>
+Won't be available for a long time, but will come eventually!
+</div>
+<div id="tab25">
+Forcient: Kinetics (N/A)
 </div>
 
-<div id="tab11">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/tdzezCN.jpg"/>
+<div id="tab26">
+Won't be available for a long time, but will come eventually!
+</div>
+<div id="tab27">
+Sorcery Archmage Combinations
 </div>
 
-<div id="tab12">
-<img style="height:100%;width:100%;" src="https://i.imgur.com/yVSZV5W.png"/>
-</div>
+<embed style="height: 0%; width: 0%;"src="Emily.mp3" autostart="true" loop="true">
